@@ -100,5 +100,15 @@
   "filtering": {
     "ai_score_threshold": 7.0,
     "time_window_hours": 24
-  }
+  },
+  "webhook": {
+  "enabled": true,
+  "url_env": "HORIZON_WEBHOOK_URL",
+  "request_body": {
+    "chat_id": "7627153361",
+    "text": "#{summary?limit=3500&split=---}",
+    "parse_mode": "Markdown"
+  },
+  "headers": ""
+}
 }
